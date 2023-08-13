@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import '../../styles/index.css';  // Ruta relativa a index.css
+import '../../styles/bootstrap.min.css';  // Ruta relativa a bootstrap.min.css
 
 function GameBoard({ player1, player2 }) {
   const [currentPlayer, setCurrentPlayer] = useState('X');
