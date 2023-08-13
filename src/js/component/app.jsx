@@ -9,15 +9,10 @@ function App() {
   const [player2, setPlayer2] = useState(null);
   const [gameStarted, setGameStarted] = useState(false);
 
-  const handleWeaponPick = (weapon) => {
+  const handleWeaponPick = (player1Name, player2Name) => {
+    setPlayer1(player1Name);
+    setPlayer2(player2Name);
     setGameStarted(true);
-    if (weapon === 'X') {
-      setPlayer1(player1 || 'Player 1');
-      setPlayer2(player2 || 'Player 2');
-    } else {
-      setPlayer1(player2 || 'Player 1');
-      setPlayer2(player1 || 'Player 2');
-    }
   };
 
   return (
