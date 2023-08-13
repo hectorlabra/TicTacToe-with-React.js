@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../../styles/index.css';  // Ruta relativa a index.css
-import '../../styles/bootstrap.min.css';  // Ruta relativa a bootstrap.min.css
+import '../../styles/index.css';
+import '../../styles/bootstrap.min.css';
 
 function GameBoard({ player1, player2 }) {
   const [currentPlayer, setCurrentPlayer] = useState('X');
@@ -43,10 +43,10 @@ function GameBoard({ player1, player2 }) {
 
   return (
     <div className="container text-center mt-5">
-      <h1>TIC TAC TOE in React.js</h1>
-      <h3 className="mt-3">{status}</h3>
+      <h1 className="text-white">TIC TAC TOE in React.js</h1>
+      <h3 className="mt-3 text-white">{status}</h3>
       <div className="row mt-4">
-        <div className="col-md-6 offset-md-3">
+        <div className="col-md-6 offset-md-3 d-flex justify-content-center"> {/* Cambio aquí */}
           <div className="board">
             {squares.map((value, index) => (
               <div key={index} className="square" onClick={() => handleClick(index)}>

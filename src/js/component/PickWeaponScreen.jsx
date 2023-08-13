@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../../styles/index.css';  // Ruta relativa a index.css
-import '../../styles/bootstrap.min.css';  // Ruta relativa a bootstrap.min.css
+import '../../styles/index.css';  
+import '../../styles/bootstrap.min.css'; 
 
 function PickWeaponScreen({ onWeaponPick }) {
   const [player1Name, setPlayer1Name] = useState('');
