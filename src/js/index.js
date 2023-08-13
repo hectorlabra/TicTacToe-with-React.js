@@ -1,12 +1,7 @@
-//import react into the bundle
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PickWeaponScreen from './component/PickWeaponScreen';
+import '../styles/index.css';
+import '../styles/bootstrap.min.css';
 
-// include your styles into the webpack bundle
-import "../styles/index.css";
-
-//import your own components
-import Home from "./component/home.jsx";
-
-//render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(<PickWeaponScreen />, document.getElementById('root'));
